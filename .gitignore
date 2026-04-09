@@ -1,0 +1,20 @@
+# Ignore everything by default
+*
+
+# Keep folders so Git can scan inside them
+!*/
+
+# Allow only these file types
+!*.py
+!*.yaml
+!*.yml
+!*.sh
+!*.cc
+!*.hpp
+!*.json
+!*.sql
+
+# Optional: keep these top-level Git files
+!.gitignore
+!README
+!README.md

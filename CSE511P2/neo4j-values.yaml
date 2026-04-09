@@ -1,0 +1,12 @@
+acceptLicenseAgreement: "yes"
+
+neo4j:
+  name: "neo4j"
+  edition: "community"
+  password: "processingpipeline"
+  plugins:
+    - "graph-data-science"
+
+volumes:
+  data:
+    mode: defaultStorageClass
