@@ -1,20 +1,53 @@
-# Ignore everything by default
-*
+# Large data files
+*.csv
+*.parquet
+*.jsonl
+*.ndjson
+*.zip
+*.tar
+*.gz
+*.bz2
+*.7z
 
-# Keep folders so Git can scan inside them
-!*/
+# Keep small config/test json files
+!headers.json
+!insert1.json
+!insert2.json
+!insert3.json
+!sink.neo4j.json
 
-# Allow only these file types
-!*.py
-!*.yaml
-!*.yml
-!*.sh
-!*.cc
-!*.hpp
-!*.json
-!*.sql
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
 
-# Optional: keep these top-level Git files
-!.gitignore
-!README
-!README.md
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+target/
+build/
+dist/
+*.class
+*.jar
+
+# C/C++ build outputs
+*.o
+*.out
+tester
+test/
+templates/
+rocksdb/
+
+# Logs / temp files
+*.log
+ERROR
+CACHED
+resolve
+transferring
+copy.txt
+solution.txt
